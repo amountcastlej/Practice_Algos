@@ -44,11 +44,11 @@ for i in range(1, 8, 1):
 #String Times
 #Given a string & a non-negative int n, return a larger string that is is n copies of the original string
 def string_times(str, n):
-return str * n
-result = ""
-for i in range(n):
-  result += str
-return result
+	return str * n
+	result = ""
+	for i in range(n):
+		result += str
+	return result
 string_times('Hi', 2)
 string_times('Hi', 3)
 string_times('Hi', 1)
@@ -56,10 +56,10 @@ string_times('Hi', 1)
 #Front Times
 #Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3. Return n copies of the front
 def front_times(str, n):return str[:3] * n
-front_len = 3
-for i in range(n):
- result = result + front
-return result
+	front_len = 3
+	for i in range(n):
+		result = result + front
+	return result
 front_times('Chocolate', 2)
 front_times('Chocolate', 3)
 front_times('Abc', 3)
@@ -67,19 +67,19 @@ front_times('Abc', 3)
 #String Bits
 #Given a string, return a new string made of every other char starting with the first, so "hello" yields "hlo"
 def string_bits(str):return str[::2] => [start:stop:step]
-result = ""
-for i in range(len(str)):
- if i % 2 == 0:result = result + str[i]
-return result
+	result = ""
+	for i in range(len(str)):
+		if i % 2 == 0:result = result + str[i]
+	return result
 string_bits('Hello')
 string_bits('Hi')
 string_bits('Heeololeo')
 
 #Missing CharGiven a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string
 def missing_char(str, n):
-front = str[:n]
-back = str[n+1:]  
-return front + back
+	front = str[:n]
+	back = str[n+1:]  
+	return front + back
 missing_char('kitten', 1)
 missing_char('kitten', 0)
 missing_char('kitten', 4)
