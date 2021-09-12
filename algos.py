@@ -83,3 +83,15 @@ def missing_char(str, n):
 missing_char('kitten', 1)
 missing_char('kitten', 0)
 missing_char('kitten', 4)
+
+#String Times
+#Given a string & a non-negative int n, return a larger string that is is n copies of the original string
+def string_times(str, n):
+	return str * n
+	result = ""
+	for i in range(n):
+		result += str
+	return result
+string_times('Hi', 2)
+string_times('Hi', 3)
+string_times('Hi', 1)
