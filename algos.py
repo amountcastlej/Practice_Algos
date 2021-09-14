@@ -95,3 +95,23 @@ def string_times(str, n):
 string_times('Hi', 2)
 string_times('Hi', 3)
 string_times('Hi', 1)
+
+#Front BackGiven a string, return a new string where the first and last chars have been exchanged.
+def front_back(str):
+	if len(str) <= 1:
+		return str
+	mid = str[1:len(str)-1]
+	return str[len(str)-1] + mid + str[0]
+front_back('code')
+
+#array_count9
+#Given an array of ints, return the number of 9's in the array.
+def array_count9(nums):
+	nines = 0
+	for i in range(len(nums)):
+		if nums[i] == 9:
+			nines += 1
+	return nines
+array_count9([1, 2, 9])
+array_count9([1, 9, 9])
+array_count9([1, 9, 9, 3, 9])
