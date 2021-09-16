@@ -115,3 +115,18 @@ def array_count9(nums):
 array_count9([1, 2, 9])
 array_count9([1, 9, 9])
 array_count9([1, 9, 9, 3, 9])
+
+#Array front9
+#Given an array of ints, return True if one of the first 4 elements in the array is a 9. The array length may be less than 4
+
+def array_front9(nums):
+	end = len(nums)
+	if end > 4:
+		end = 4
+	for i in range(end):
+		if nums[i] == 9:
+    			return True
+	return False
+array_front9([1, 2, 9, 3, 4])
+array_front9([1, 2, 3, 4, 9])
+array_front9([1, 2, 3, 4, 5])
