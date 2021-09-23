@@ -141,3 +141,19 @@ def array123(nums):
 array123([1, 1, 2, 3, 1]) 
 array123([1, 1, 2, 4, 1])
 array123([1, 1, 2, 1, 2, 3])
+
+#First Half
+#Given a string of even length, return the first half.
+def first_half(str):
+	half = len(str)
+return (str[0:half/2])
+first_half('WooHoo')
+first_half('HelloThere')
+
+#First Two
+#Given a string, return the string made of it's first two chars, so the string "Hello" yields "He".
+def first_two(str):
+	return str[:2]
+first_two('Hello')
+first_two('abcdefg')
+first_two('ab')
