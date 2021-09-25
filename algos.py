@@ -157,3 +157,22 @@ def first_two(str):
 first_two('Hello')
 first_two('abcdefg')
 first_two('ab')
+
+#Without End
+#Given a string, return a verison without the first and last character
+def without_end(str):
+	return str[1:-1]
+without_end('Hello')
+without_end('java')
+without_end('coding')
+
+#Combo String
+#Given 2 strings, a and b, return a string of the form short + long + short, with the shorter string on the outside and the longer string on the inside
+def combo_string(a, b):
+	if len(a) < len(b):
+		return a + b + a
+	if len(b) < len(a):
+		return b + a + b
+combo_string('Hello', 'hi')
+combo_string('hi', 'Hello')
+combo_string('aaa', 'b')
