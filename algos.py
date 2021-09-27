@@ -176,3 +176,28 @@ def combo_string(a, b):
 combo_string('Hello', 'hi')
 combo_string('hi', 'Hello')
 combo_string('aaa', 'b')
+
+#Non Start
+#Given 2 strings, return their concatenation, except omit the first char of each
+def non_start(a, b):
+	return a[1:] + b[1:]
+non_start('Hello', 'There')
+non_start('java', 'code')
+non_start('shotl', 'java')
+
+#Left2
+#Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end
+def left2(str):
+	first2 = str[:2]
+	return str[2:] + first2
+left2('Hello')
+left2('java')
+left2('Hi')
+
+#First Last 6
+#Given an array of ints, return True if 6 appears as either the first or last element in the array
+def first_last6(nums):
+	return (nums[0]==6 or nums[-1] == 6)
+first_last6([1, 2, 6])
+first_last6([6, 1, 2, 3])
+first_last6([13, 6, 1, 2, 3])
