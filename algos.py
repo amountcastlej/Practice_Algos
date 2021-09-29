@@ -201,3 +201,19 @@ def first_last6(nums):
 first_last6([1, 2, 6])
 first_last6([6, 1, 2, 3])
 first_last6([13, 6, 1, 2, 3])
+
+#Same First & last
+#Given an array of ints, return True if the array is length 1 or more, and the first element and last element are equal
+def same_first_last(nums):
+	return len(nums) > 0 and nums[0] == nums[-1]
+same_first_last([1, 2, 3])
+same_first_last([1, 2, 3, 1])
+same_first_last([1, 2, 1])
+
+#Common End
+#Give 2 arrays of ints, a and b, return True if they ahve the same first element or they have the same last element. Both arrays will be length 1 or more
+def common_end(a, b):
+	return a[0] == b[0] or a[-1] == b[-1]
+common_end([1, 2, 3], [7, 3]
+common_end([1, 2, 3], [7, 3, 2]
+common_end([1, 2, 3], [1, 3]
