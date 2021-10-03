@@ -217,3 +217,19 @@ def common_end(a, b):
 common_end([1, 2, 3], [7, 3]
 common_end([1, 2, 3], [7, 3, 2]
 common_end([1, 2, 3], [1, 3]
+
+#Sum3
+#Given an array of ints length 3, return the sum of all the elements
+def sum3(nums):
+	return nums[0] + nums[1] + nums[-1]
+sum3([1, 2, 3])
+sum3([5, 11, 2])
+sum3([7, 0, 0])
+
+#Rotate Left 3
+#Given an array of ints length 3, return an array with the elements "rotated left"
+def rotate_left3(nums):
+	return nums[1:] + nums[:1]
+rotate_left([1, 2, 3])
+rotate_left([5, 11, 9])
+rotate_left([7, 0, 0])
