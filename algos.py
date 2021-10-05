@@ -233,3 +233,12 @@ def rotate_left3(nums):
 rotate_left([1, 2, 3])
 rotate_left([5, 11, 9])
 rotate_left([7, 0, 0])
+
+#Reverse3
+#Given an array of ints length 3, return a new array with the elements in reverse order
+def reverse3(nums):
+	return nums[::-1]
+	return reverse3(nums[1:]) + nums[:1] if nums else nums
+reverse3([1, 2, 3]) 
+reverse3([5, 11, 9]) 
+reverse3([7, 0, 0]) 
